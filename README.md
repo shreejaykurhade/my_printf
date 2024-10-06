@@ -112,7 +112,7 @@ A custom implementation of the printf function, supporting various format specif
 
 Arguments:
 - fmt: The format string containing conversion specifiers.
-- ...: Variable arguments depending on the format specifiers in fmt.
+- ... : Variable arguments depending on the format specifiers in fmt.
 
 Returns:
 - Always returns 0 (can be customized as needed).
@@ -266,16 +266,16 @@ Purpose: This is the custom printf implementation that formats and prints string
 4. The converted string is printed to the console using puts or putchar.
 5. Supported format specifiers:
 
-  \n %s - String
-  \n %d - Signed decimal integer
-  \n %u - Unsigned decimal integer
-  \n %x - Hexadecimal integer (lowercase)
-  \n %X - Hexadecimal integer (uppercase)
-  \n %o - Octal integer
-  \n %f - Floating-point number
-  \n %c - Character
-  \n %p - Pointer
-  \n %% - Literal percent symbol
+  #### %s - String
+  #### %d - Signed decimal integer
+  #### %u - Unsigned decimal integer
+  #### %x - Hexadecimal integer (lowercase)
+  #### %X - Hexadecimal integer (uppercase)
+  #### %o - Octal integer
+  #### %f - Floating-point number
+  #### %c - Character
+  #### %p - Pointer
+  #### %% - Literal percent symbol
 
 Example:
 ```ruby
