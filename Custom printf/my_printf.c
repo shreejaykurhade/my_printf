@@ -240,7 +240,7 @@ int printf(const char *fmt, ...) {
 }
 
 int main() {
-    printf("String: %s\n", "Hello, World!");
+    printf("String: %s\n", "Hell oWorld");
     printf("Integer: %d\n", 12345);
     printf("Unsigned: %u\n", 54321);
     printf("Hex: %x\n", 255);
