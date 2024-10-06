@@ -11,8 +11,10 @@ This project implements a simplified version of the printf function and a custom
 
 ### 1. reverse
 Reverses a given string in place.
+
 Arguments:
 - str: The string to reverse.
+
 Returns:
 - None (modifies the input string directly).
 
