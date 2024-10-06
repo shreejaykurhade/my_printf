@@ -36,7 +36,7 @@ The core logic revolves around processing the format string and variadic argumen
   The printf() function takes a format string and a variable number of arguments. It processes each character in the format string:
 
   - If a % symbol is encountered, the function expects a format specifier and handles the corresponding argument (string, integer, float, or character).
-- Otherwise, it simply outputs the character.
+  - Otherwise, it simply outputs the character.
       ```ruby
       if (*p == '%') {
       p++;  // Move to the format specifier
