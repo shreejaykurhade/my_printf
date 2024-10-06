@@ -10,103 +10,103 @@ This project implements a simplified version of the printf function and a custom
 ## Functions Overview
 
 ### 1. reverse
-- Reverses a given string in place.
-#### Arguments:
+Reverses a given string in place.
+Arguments:
 - str: The string to reverse.
-#### Returns:
+Returns:
 - None (modifies the input string directly).
 
 ### 2. itoa
-- Converts an integer to a string (decimal format).
-#### Arguments:
+Converts an integer to a string (decimal format).
+Arguments:
 - num: The integer to convert.
 - buffer: A pointer to the buffer where the converted string will be stored.
-#### Returns:
+Returns:
 - None (stores the result in buffer).
 
 ### 3. utoa
-- Converts an unsigned integer to a string.
-#### Arguments:
+Converts an unsigned integer to a string.
+Arguments:
 - num: The unsigned integer to convert.
 - buffer: A pointer to the buffer where the converted string will be stored.
-#### Returns:
+Returns:
 - None (stores the result in buffer).
 
 ### 4. itoh
-- Converts an unsigned integer to a hexadecimal string.
-#### Arguments:
+Converts an unsigned integer to a hexadecimal string.
+Arguments:
 - num: The integer to convert.
 - buffer: A pointer to the buffer where the result will be stored.
 - uppercase: If non-zero, the hexadecimal digits will be in uppercase.
-#### Returns:
+Returns:
 - None (stores the result in buffer).
 
 ### 5. itoo
-- Converts an unsigned integer to an octal string.
-#### Arguments:
+Converts an unsigned integer to an octal string.
+Arguments:
 - num: The unsigned integer to convert.
 - buffer: A pointer to the buffer where the result will be stored.
-#### Returns:
+Returns:
 - None (stores the result in buffer).
 
 ### 6. ftoa
-- Converts a floating-point number to a string.
-#### Arguments:
+Converts a floating-point number to a string.
+Arguments:
 - num: The floating-point number to convert.
 - buffer: A pointer to the buffer where the result will be stored.
 - precision: The number of digits after the decimal point.
-#### Returns:
+Returns:
 - None (stores the result in buffer).
 
 ### 7. my_malloc
-- Custom memory allocation function.
-#### Arguments:
+Custom memory allocation function.
+Arguments:
 - size: The size of memory to allocate (in bytes).
-#### Returns:
+Returns:
 - A pointer to the allocated memory.
 - Returns NULL if the memory cannot be allocated due to insufficient space.
 
 ### 8. putchar
-- Outputs a single character using write().
-#### Arguments:
+Outputs a single character using write().
+Arguments:
 - x: The character to output.
-#### Returns:
+Returns:
 - None.
 
 ### 9. puts
-- Outputs a string using write().
-#### Arguments:
+Outputs a string using write().
+Arguments:
 - str: The string to output.
-#### Returns:
+Returns:
 - None.
 
 ### 10. strlen
-- Calculates the length of a string.
-#### Arguments:
+Calculates the length of a string.
+Arguments:
 - str: The string whose length is to be calculated.
-#### Returns:
+Returns:
 - The length of the string (number of characters).
 
 ### 11. printf
-- A custom implementation of the printf function, supporting various format specifiers.
-#### Arguments:
+A custom implementation of the printf function, supporting various format specifiers.
+Arguments:
 - fmt: The format string containing conversion specifiers.
 - ...: Variable arguments depending on the format specifiers in fmt.
-#### Returns:
+Returns:
 - Always returns 0 (can be customized as needed).
 
 ## Variables Overview
 ### heap
-- A static array representing the heap memory (size: 1024 bytes) used by my_malloc to allocate memory.
+A static array representing the heap memory (size: 1024 bytes) used by my_malloc to allocate memory.
 
 ### heap_index
-- Keeps track of the current position in the heap for memory allocation.
+Keeps track of the current position in the heap for memory allocation.
 
 ### buffer
-- A dynamic buffer allocated by my_malloc for temporary storage in functions like printf.
+A dynamic buffer allocated by my_malloc for temporary storage in functions like printf.
 
 ### State
-- A custom typedef representing the state of the program during parsing (Wait4char, Wait4fmt).
+A custom typedef representing the state of the program during parsing (Wait4char, Wait4fmt).
 
 ## Custom Functions:
 ### reverse
