@@ -1,5 +1,5 @@
 # printf Function Without stdio.h
-This project implements a simplified version of the printf function and a custom malloc function (my_malloc). The printf implementation supports various format specifiers (like %d, %x, %f, etc.), while the my_malloc function provides basic dynamic memory allocation. The goal is to illustrate how essential C library functions can be built from scratch.
+my_printf implements a simplified version of the printf function and a custom malloc function (my_malloc). The printf implementation supports various format specifiers (like %d, %x, %f, etc.), while the my_malloc function provides basic dynamic memory allocation. The goal is to illustrate how essential C library functions can be built from scratch.
 
 ## Features:
 1. Supports basic format specifiers: %d (Signed integers), %u (Unsigned integers), %x or %X (Hexadecimal lowercase/uppercase), %o (Octal), %f (Floating-point numbers), %s (Strings), %c (Characters), %p (Pointers) and %% (Literal percent symbol) .
