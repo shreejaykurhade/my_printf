@@ -20,80 +20,100 @@ Returns:
 
 ### 2. itoa
 Converts an integer to a string (decimal format).
+
 Arguments:
 - num: The integer to convert.
 - buffer: A pointer to the buffer where the converted string will be stored.
+
 Returns:
 - None (stores the result in buffer).
 
 ### 3. utoa
 Converts an unsigned integer to a string.
+
 Arguments:
 - num: The unsigned integer to convert.
 - buffer: A pointer to the buffer where the converted string will be stored.
+
 Returns:
 - None (stores the result in buffer).
 
 ### 4. itoh
 Converts an unsigned integer to a hexadecimal string.
+
 Arguments:
 - num: The integer to convert.
 - buffer: A pointer to the buffer where the result will be stored.
 - uppercase: If non-zero, the hexadecimal digits will be in uppercase.
+
 Returns:
 - None (stores the result in buffer).
 
 ### 5. itoo
 Converts an unsigned integer to an octal string.
+
 Arguments:
 - num: The unsigned integer to convert.
 - buffer: A pointer to the buffer where the result will be stored.
+
 Returns:
 - None (stores the result in buffer).
 
 ### 6. ftoa
 Converts a floating-point number to a string.
+
 Arguments:
 - num: The floating-point number to convert.
 - buffer: A pointer to the buffer where the result will be stored.
 - precision: The number of digits after the decimal point.
+
 Returns:
 - None (stores the result in buffer).
 
 ### 7. my_malloc
 Custom memory allocation function.
+
 Arguments:
 - size: The size of memory to allocate (in bytes).
+
 Returns:
 - A pointer to the allocated memory.
 - Returns NULL if the memory cannot be allocated due to insufficient space.
 
 ### 8. putchar
 Outputs a single character using write().
+
 Arguments:
 - x: The character to output.
+
 Returns:
 - None.
 
 ### 9. puts
 Outputs a string using write().
+
 Arguments:
 - str: The string to output.
+
 Returns:
 - None.
 
 ### 10. strlen
 Calculates the length of a string.
+
 Arguments:
 - str: The string whose length is to be calculated.
+
 Returns:
 - The length of the string (number of characters).
 
 ### 11. printf
 A custom implementation of the printf function, supporting various format specifiers.
+
 Arguments:
 - fmt: The format string containing conversion specifiers.
 - ...: Variable arguments depending on the format specifiers in fmt.
+
 Returns:
 - Always returns 0 (can be customized as needed).
 
@@ -246,16 +266,16 @@ Purpose: This is the custom printf implementation that formats and prints string
 4. The converted string is printed to the console using puts or putchar.
 5. Supported format specifiers:
 
-  %s - String
-  %d - Signed decimal integer
-  %u - Unsigned decimal integer
-  %x - Hexadecimal integer (lowercase)
-  %X - Hexadecimal integer (uppercase)
-  %o - Octal integer
-  %f - Floating-point number
-  %c - Character
-  %p - Pointer
-  %% - Literal percent symbol
+  \n %s - String
+  \n %d - Signed decimal integer
+  \n %u - Unsigned decimal integer
+  \n %x - Hexadecimal integer (lowercase)
+  \n %X - Hexadecimal integer (uppercase)
+  \n %o - Octal integer
+  \n %f - Floating-point number
+  \n %c - Character
+  \n %p - Pointer
+  \n %% - Literal percent symbol
 
 Example:
 ```ruby
