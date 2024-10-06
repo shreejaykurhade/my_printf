@@ -9,12 +9,12 @@ This project implements a custom version of the printf() function in C without u
 ## How It Works:
 The core logic revolves around processing the format string and variadic arguments manually using a custom implementation of va_list. Here’s an explanation of the components and logic:
   ### 1. Custom va_list Implementation:
-      We define our own macros to simulate the behavior of va_list, va_start, va_arg, and va_end:
+  We define our own macros to simulate the behavior of va_list, va_start, va_arg, and va_end:
 
-      - va_list is defined as a char*, a pointer to the location on the stack where the variable arguments are stored.
-      - va_start initializes the va_list to point to the first argument after the fixed parameters.
-      - va_arg retrieves the next argument from the list, moving the pointer to the next position.
-      - va_end is used to clean up, though it’s optional.
+  - va_list is defined as a char*, a pointer to the location on the stack where the variable arguments are stored.
+  - va_start initializes the va_list to point to the first argument after the fixed parameters.
+  - va_arg retrieves the next argument from the list, moving the pointer to the next position.
+  - va_end is used to clean up, though it’s optional.
       ```ruby
       typedef char* va_list;  // Define va_list as a char pointer
 
@@ -26,17 +26,17 @@ The core logic revolves around processing the format string and variadic argumen
 
       ```
   ### 2. Output Functions:
-      - putchar(x): Outputs a single character to the console by duplicating it in a buffer and calling write().
-      - puts(str): Outputs a string by calculating its length and calling write() with the entire string.
+  - putchar(x): Outputs a single character to the console by duplicating it in a buffer and calling write().
+  - puts(str): Outputs a string by calculating its length and calling write() with the entire string.
   ### 3. Helper Functions:
-      - chardup(char): Converts a character into a null-terminated string to be printed with write().
-      - itoa(int, char*): Converts an integer into a string (reverse order) and handles negative numbers.
-      - ftoa(float, char*, int): Converts a float to a string with a given precision for decimal points.
+  - chardup(char): Converts a character into a null-terminated string to be printed with write().
+  - itoa(int, char*): Converts an integer into a string (reverse order) and handles negative numbers.
+  - ftoa(float, char*, int): Converts a float to a string with a given precision for decimal points.
   ### 4. Custom printf() Function:
-      The printf() function takes a format string and a variable number of arguments. It processes each character in the format string:
+  The printf() function takes a format string and a variable number of arguments. It processes each character in the format string:
 
-      - If a % symbol is encountered, the function expects a format specifier and handles the corresponding argument (string, integer, float, or character).
-      - Otherwise, it simply outputs the character.
+  - If a % symbol is encountered, the function expects a format specifier and handles the corresponding argument (string, integer, float, or character).
+- Otherwise, it simply outputs the character.
       ```ruby
       if (*p == '%') {
       p++;  // Move to the format specifier
@@ -100,17 +100,16 @@ The core logic revolves around processing the format string and variadic argumen
       printf("Float: %f\n", 123.456);
       printf("Character: %c\n", 'A');
       printf("Literal Percent: %%\n");
-
-    return 0;
-    }
+      return 0;
+      }
       ```
 
   ## Functions Breakdown:
-    1. putchar(x): Outputs a single character using the write() system call.
-    2. puts(str): Outputs a string by calculating its length and writing it to stdout.
-    3. itoa(num, buffer): Converts an integer into a string, handles negative numbers, and reverses the digits in the string.
-    4. ftoa(float, buffer, precision): Converts a floating-point number into a string, with a specified precision for the fractional part.
-    5. printf(fmt, ...): Custom implementation of the printf function. It parses the format string and handles various data types using the custom variadic argument handling.
+  1. putchar(x): Outputs a single character using the write() system call.
+  2. puts(str): Outputs a string by calculating its length and writing it to stdout.
+  3. itoa(num, buffer): Converts an integer into a string, handles negative numbers, and reverses the digits in the string.
+  4. ftoa(float, buffer, precision): Converts a floating-point number into a string, with a specified precision for the fractional part.
+  5. printf(fmt, ...): Custom implementation of the printf function. It parses the format string and handles various data types using the custom variadic argument handling.
 
   ## Notes
   - Precision for floats: You can adjust the number of decimal places for float formatting by modifying the precision parameter in the ftoa() function.
