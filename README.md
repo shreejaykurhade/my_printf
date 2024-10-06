@@ -565,6 +565,9 @@ The core logic revolves around processing the format string and variadic argumen
   4. ftoa(float, buffer, precision): Converts a floating-point number into a string, with a specified precision for the fractional part.
   5. printf(fmt, ...): Custom implementation of the printf function. It parses the format string and handles various data types using the custom variadic argument handling.
 
+## Notes:
+1. Precision for floats: You can adjust the number of decimal places for float formatting by modifying the precision parameter in the ftoa() function.
+2. Expanding functionality: To handle more format specifiers (e.g., hex, octal), simply add more cases in the switch statement in printf().
     
 
 
