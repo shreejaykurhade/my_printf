@@ -5,7 +5,7 @@ This project implements a simplified version of the printf function and a custom
 1. Supports basic format specifiers: %d (Signed integers), %u (Unsigned integers), %x or %X (Hexadecimal lowercase/uppercase), %o (Octal), %f (Floating-point numbers), %s (Strings), %c (Characters), %p (Pointers) and %% (Literal percent symbol) .
 2. Manually implements variadic argument handling without the stdarg.h library.
 3. Provides custom string handling (puts) and character output (putchar) using write() system calls.
-4. Custom simplified malloc function to allocate memory.
+4. Custom simplified malloc function to allocate memory using heap.
 
 ## Functions Overview
 
