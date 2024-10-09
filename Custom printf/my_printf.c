@@ -9,8 +9,8 @@ typedef char* va_list;
 #define va_arg(ap, type) (*(type *)((ap += _INTSIZEOF(type)) - _INTSIZEOF(type)))
 #define va_end(ap) (ap = (va_list)0)
 
-#define Wait4char 1
-#define Wait4fmt  2
+#define Wait4char 1   // 0001 
+#define Wait4fmt  2   // 0010
 
 typedef unsigned char State;
 
