@@ -538,7 +538,7 @@ The core logic revolves around processing the format string and variadic argumen
      - 
   2. Compile the code using a C compiler (e.g., gcc):
       ```ruby
-      gcc custom_printf.c -o my_printf
+      gcc my_printf.c -o my_printf
       ```
 
   3. Run the program:
