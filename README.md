@@ -534,7 +534,7 @@ The core logic revolves around processing the format string and variadic argumen
       ```
   ## How to use it: 
   1. Clone or copy the code:
-     - Place the code in a .c file (e.g., custom_printf.c).
+     - Place the code in a .c file (e.g.  my_printf.c).
      - 
   2. Compile the code using a C compiler (e.g., gcc):
       ```ruby
